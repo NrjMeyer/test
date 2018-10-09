@@ -1,0 +1,85 @@
+.contenu {margin:0 25px 0 35px;}
+.contenu form{margin:15px 10px 10px;}
+	
+.bouton_remplir_formulaire{clear:both; display:block;}	
+
+.intro{font-weight:normal; font-size:11px; color:#292929; float:left;margin:5px 0 5px 25px}
+.intro p {line-height:14px;margin:0;padding:0; text-align:left;}
+
+.contenu_formulaire{float:left; width:600px; margin:0 0 0 25px}
+.contenu_formulaire .block input[type=text]{background:url(../images/fond_input_text.png) no-repeat top left; width:325px; height:21px; border:none; color:#8d8685; margin:0 0 0 75px; padding:0 0 0 10px;font-size:12px;font-family:Arial;float:left;}
+.contenu_formulaire .block.div_obligatoire input[type=text]{font-weight:bold;}
+
+#form_contact .textarea-identifier.description{display:none;}
+#form_contact.contenu_formulaire{color:#8d8685;width:auto;}
+#form_contact.contenu_formulaire .content_form{float:left;width:auto;}
+#form_contact.contenu_formulaire label{color:#8d8685;cursor:pointer}
+#form_contact.contenu_formulaire fieldset{border:0;margin:0 0 10px 0;padding:0;width:650px;float:left;}
+#form_contact.contenu_formulaire fieldset#loi_informatiques{width:450px;}
+#form_contact.contenu_formulaire fieldset#loi_informatiques p{width:450px;font-size:11px;font-style:italic;color:#8d8685}
+*+ html #form_contact.contenu_formulaire fieldset#loi_informatiques p{width:400px;}
+#form_contact.contenu_formulaire fieldset span.objet_parmi{color:#d51a18;font-size:14px;}
+#form_contact.contenu_formulaire fieldset span.fieldset_texte{color:#8d8685;font-size:12px;font-weight:bold;text-decoration:underline;font-style:italic;}
+#form_contact.contenu_formulaire fieldset span.fieldset_sous_texte{color:#8d8685;font-size:12px;font-weight:bold;}
+#form_contact.contenu_formulaire fieldset fieldset{border:0;margin:10px 10px 0 0;padding:0;width:210px;float:left;}
+#form_contact.contenu_formulaire fieldset fieldset#fieldset_solution{width:190px;margin:10px 40px 0 0}
+#form_contact.contenu_formulaire fieldset fieldset#fieldset_solution div{width:190px;}
+#form_contact.contenu_formulaire fieldset fieldset#fieldset_sinformer{width:200px;}
+#form_contact.contenu_formulaire fieldset fieldset#fieldset_sinformer div {width:200px;}
+#form_contact.contenu_formulaire fieldset fieldset#fieldset_se_former div {width:200px;}
+#form_contact.contenu_formulaire #edit-message-wrapper label {float:left;clear:both;margin:0 0 10px 0; font-weight:bold;color:#8d8685}
+#form_contact.contenu_formulaire #edit-message-wrapper textarea {float:left;clear:both;margin:0 0 10px 0;}
+#form_contact.contenu_formulaire fieldset fieldset.last{margin:10px 0 0 0;}
+#form_contact.contenu_formulaire .block{margin:0 0 10px 0;padding:0;width:650px;text-align:left;}
+#form_contact.contenu_formulaire .form-radios{margin:0 0 10px 75px;padding:0;width:575px;text-align:left;}
+
+#form_contact.contenu_formulaire fieldset fieldset .block, #form_contact.contenu_formulaire fieldset .block, #form_contact.contenu_formulaire #edit-body-wrapper{margin:0 0 10px 0;width:auto;}
+#form_contact.contenu_formulaire #edit-body-wrapper label{float:left;clear:both;color:#8d8685;font-size:12px;font-weight:bold;margin:0 0 10px 0;}
+#form_contact.contenu_formulaire #edit-body-wrapper textarea{float:left;clear:both;}
+#form_contact.contenu_formulaire fieldset fieldset #edit-checkbox-newsletter-acheteurs-publics-wrapper.block, #form_contact.contenu_formulaire fieldset #edit-checkbox-newsletter-entreprise-wrapper.block{margin:10px 0 10px 0;}
+#form_contact.contenu_formulaire fieldset fieldset #edit-checkbox-newsletter-acheteurs-publics-wrapper.block input{top:7px}
+#form_contact.contenu_formulaire fieldset fieldset .block span.display_block, #form_contact.contenu_formulaire fieldset .block span.display_block{display:block;margin:0 0 0 20px;}
+#form_contact.contenu_formulaire fieldset fieldset input[type=checkbox], #form_contact.contenu_formulaire fieldset input[type=checkbox]{width: 13px; height: 13px; padding: 0; margin:0; vertical-align: bottom; position: relative;top: 1px; *overflow: hidden;}
+#form_contact.contenu_formulaire fieldset fieldset input#edit-checkboxes-solutions-preparer{top:17px}
+#form_contact.contenu_formulaire fieldset fieldset input#edit-checkboxes-solutions-gerer{top:23px}
+#form_contact.contenu_formulaire fieldset fieldset input#edit-checkboxes-solutions-suivre{top:7px}
+#form_contact.contenu_formulaire fieldset fieldset input#edit-checkboxes-se-former-journal{top:7px}
+
+.contenu_formulaire input[type=radio]{display:inline; clear:both;margin:0 2px 0 0; }
+.contenu_formulaire .input_radio{list-style-type:none; margin:0; float:left}
+.contenu_formulaire .input_radio li{display:inline; float:left; margin:0 10px 0 0; padding:0; color:#ccbeb8; border:none }
+
+.contenu_formulaire input[type=checkbox]{clear:none; float:left }
+.contenu_formulaire .block{float:left; margin:0; padding:0; clear:both; margin:0 0 10px 0;width:inherit}
+.contenu_formulaire .block.last{width:290px}
+.contenu_formulaire .block.full{width:100%}
+
+.contenu_formulaire .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 70px; clear:none;outline:0;}	
+html* .contenu_formulaire .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 10px; clear:none}	
+
+span.obligatoire {color:#d51a18; float:left; margin:5px 0 0 5px;}
+span.erreur {color:#d51a18; display:none; font-size:12px; line-height:1.7em; float:left; margin:0 0 0 10px}
+
+h4{margin:0 0 10px 0; font-size:13px}
+.intitule_input_radio{float:left; margin:0 10px 0 7px; color:#CCBEB8;}
+html* .intitule_input_radio{float:left; margin:3px 10px 0 4px; color:#CCBEB8;}
+.contenu_formulaire textarea{background:url(../images/fond_textarea.png) no-repeat; width:487px; height:109px; border:none; color:#ccbeb8; padding:3px 10px 0 10px;font-family:Arial;font-size:12px;}
+
+.contenu_formulaire .en_ligne{clear:none; float:left; margin:0 0 0 55px;}
+.contenu_formulaire .block.en_ligne_last{clear:none; float:left; margin:0 0 0 55px;}
+
+.contenu_generic.overlay h1{margin: 0 0 15px 0;}
+.contenu_generic.overlay p, #pp_full_res .pp_inline p{margin: 0 0 5px 0;}
+.contenu_generic.overlay form {margin: 0 0 0 25px;float:left;}
+.contenu_generic.overlay form .block, .contenu_generic.overlay form .form-radios{margin:0 0 10px 0;padding:0;width:475px;text-align:left;float:left;}
+.contenu_generic.overlay form .block input[type=text]{background:url(../images/fond_input_text.png) no-repeat top left; width:325px; height:21px; border:none; color:#8d8685; margin:0; padding:0 0 0 10px;font-size:11px;font-family:Arial;float:left;}
+.contenu_generic.overlay form .block.div_obligatoire input[type=text]{font-weight:bold;}
+.contenu_generic.overlay form .block label, .contenu_generic.overlay form .form-radios label{color:#8d8685;cursor:pointer;font-size:11px;}
+.contenu_generic.overlay form #edit-dematerialisation-facile-wrapper, .contenu_generic.overlay form #edit-dematerialisation-facile-1-wrapper{width: 340px;}
+.contenu_generic.overlay form #edit-dematerialisation-facile-wrapper input, .contenu_generic.overlay form #edit-dematerialisation-facile-1-wrapper input{width: 13px; height: 13px; padding: 0; margin:0; vertical-align: bottom; position: relative;top: 1px; *overflow: hidden;top:1px;}
+.contenu_generic.overlay form #edit-dematerialisation-facile-wrapper .display_block, .contenu_generic.overlay form #edit-dematerialisation-facile-1-wrapper .display_block{font-size:11px;}
+.contenu_generic.overlay form .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 30px; clear:none;outline:0;}	
+.contenu_generic.overlay form .bouton_envoyer_image{border:none; cursor:pointer; float:left; margin:0 0 0 30px; clear:none;outline:0;}	
+.contenu_generic.overlay form fieldset{border:0;margin:0 0 10px 0;padding:0;width:475px;float:left;}
+.contenu_generic.overlay form fieldset#loi_informatiques{width:352px;}
+.contenu_generic.overlay form fieldset#loi_informatiques p{width:352px;font-size:11px;font-style:italic;color:#8d8685;margin:0;padding:0;line-height:14px;}

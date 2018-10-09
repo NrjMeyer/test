@@ -1,0 +1,34 @@
+﻿.contenu {margin:0 15px 0 15px;}
+.bouton_remplir_formulaire{clear:both; display:block;}	
+
+.intro{font-weight:normal; font-size:11px; color:#292929; float:left;margin:0 0 10px 25px}
+*+ html .intro{font-weight:normal; font-size:11px; color:#292929; float:left;margin:0 0 5px 25px}
+.intro p {line-height:14px;margin:0;padding:0; text-align:left;}
+
+.contenu_formulaire{float:left; width:465px; margin:0 0 0 25px}
+.contenu_formulaire input[type=text]{background:url(../images/fond_input_text.png) no-repeat; width:325px; height:21px; border:none; color:#ccbeb8; padding:0 0 0 10px;float:left; }
+
+#inline-1 .contenu h1, #inline-2 .contenu h1, #inline-3 .contenu h1{font-size:20px;margin:5px 0 10px 0; text-align:center}
+
+.contenu_formulaire input[type=radio]{display:inline; clear:both;margin:0 2px 0 0; }
+.contenu_formulaire .input_radio{list-style-type:none; margin:0; float:left}
+*+ html .contenu_formulaire .input_radio{list-style-type:none; margin:0; float:left}
+.contenu_formulaire .input_radio li{display:inline; float:left; margin:0 10px 0 0; padding:0; color:#ccbeb8; border:none }
+
+.contenu_formulaire input[type=checkbox]{clear:none; float:left }
+.contenu_formulaire  .block{float:left; margin:0; padding:0; clear:both; margin:0 0 10px 0;}
+.contenu_formulaire  .block.last{width:290px}
+*+ html .contenu_formulaire  .block.last{width:330px}
+*+ html .contenu_formulaire  .block{float:left; margin:0; padding:0; clear:both; margin:0 0 10px 0; width:100%}
+
+.contenu_formulaire .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 70px; clear:none}	
+*+ html  .contenu_formulaire .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 30px; clear:none}	
+
+span.obligatoire {color:#FF0000; float:left; margin:5px 0 0 5px;}
+span.erreur {color:#FF0000; display:none; font-size:12px; line-height:1.7em; float:right; margin:0 0 0 10px}
+
+h4{margin:0 0 10px 0}
+.intitule_input_radio{float:left; margin:0 10px 0 7px; color:#CCBEB8}
+.contenu_formulaire textarea{background:url(../images/fond_textarea.png) no-repeat; width:313px; height:97px; border:none; color:#ccbeb8; padding:3px 10px 0 10px}
+
+.contenu_formulaire .block.en_ligne{clear:none; float:left; margin:0 0 0 60px}

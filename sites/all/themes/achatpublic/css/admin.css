@@ -1,0 +1,62 @@
+﻿/* default styling for all form buttons */
+input.form-submit, input.teaser-button {
+  background: transparent url(../images/buttons/blue-button.png) no-repeat top;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 96%;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 2px 4px;
+  text-transform: uppercase;
+  outline: 1px solid #9BABB0;
+  -moz-border-radius: 4px;
+  -moz-outline-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.node-form input#edit-submit.form-submit, input#edit-save.form-submit {
+  background: transparent url(../images/buttons/green-button.png) no-repeat top;
+}
+
+input#edit-delete.form-submit,
+#system-modules-uninstall input#edit-submit,
+#user-multiple-delete-confirm input#edit-submit {
+  background: transparent url(../images/buttons/red-button.png) no-repeat top;
+}
+
+input.form-submit:hover,
+input.teaser-button:hover,
+input#edit-save.form-submit,
+.node-form input#edit-submit.form-submit:hover,
+input#edit-delete.form-submit:hover,
+ #system-modules-uninstall input#edit-submit:hover,
+#user-multiple-delete-confirm input#edit-submit:hover   {
+  background-position: bottom;
+  cursor: pointer;
+}
+
+input#edit-save.form-submit[disabled], input.disabled {
+  background: transparent url(../images/buttons/grey-button.png) no-repeat top;
+}
+
+#views-ui-admin-tools input#edit-clear-cache {
+  margin-top: 5px;
+}
+
+#views-ui-edit-view-form {
+  margin-top: 10px;
+}
+
+#edit-add-display {
+  margin-bottom: 10px;
+}
+
+.remove-display input.form-submit {
+  background: transparent url(../images/buttons/red-button.png) no-repeat top;
+}
+
+.remove-display input.form-submit:hover  {
+  background-position: bottom;
+  cursor: pointer;
+}

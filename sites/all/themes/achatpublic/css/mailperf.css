@@ -1,0 +1,46 @@
+.mailperf span.display_block{display:block; margin: 0 0 0 20px;}
+.mailperf fieldset span.section{color:#d51a18;font-size:14px;}
+.mailperf .content_form {float:left; width:auto;color:#8d8685;font-family: Arial, sans-serif; font-size: 12px;}
+.mailperf .form-radios{margin:0 0 10px 75px;padding:0;width:575px;text-align:left;}
+.mailperf label{color:#8d8685;cursor:pointer}
+.mailperf label.option {padding-right: 10px;}
+.mailperf input[type=radio]{display:inline; clear:both;margin:0 2px 0 0; }
+.mailperf .block{float:left; margin:0; padding:0; clear:both; margin:0 0 10px 0;width:inherit}
+.mailperf .block.mandatory input[type=text], .mailperf .block input[type=email]{font-weight:bold;}
+.mailperf .block input[type=text], .mailperf .block input[type=email]{background:url(../images/fond_input_text.png) no-repeat top left; width:325px; height:21px; border:none; color:#8d8685; margin:0 0 0 75px; padding:0 0 0 10px;font-size:12px;font-family:Arial;float:left;}
+.mailperf .block select{background:url(../images/fond_input_text.png) no-repeat top left; width:335px; height:21px; border:none; color:#8d8685; margin:0 0 0 75px; padding:0 0 0 10px;font-size:12px;font-family:Arial;float:left;}
+.mailperf .block textarea{background:url(../images/fond_textarea.png) no-repeat; width:487px; height:109px; border:none; color:#ccbeb8; padding:3px 10px 0 10px;font-family:Arial;font-size:12px;}
+
+.mailperf #message label {float:left;clear:both;margin:0 0 10px 0; font-weight:bold;color:#8d8685}
+.mailperf #message textarea {float:left;clear:both;margin:0 0 10px 0;}
+
+.mailperf fieldset{border:0;margin:0 0 10px 0;padding:0;width:650px;float:left;clear:both;}
+.mailperf fieldset span.heading1{color:#8d8685;font-size:12px;font-weight:bold;text-decoration:underline;font-style:italic;}
+.mailperf fieldset span.heading2{color:#8d8685;font-size:12px;font-weight:bold;}
+.mailperf fieldset fieldset{border:0;margin:10px 20px 0 0;padding:0;width:210px;float:left;clear:none;}
+.mailperf fieldset fieldset input[type=checkbox]{width: 13px; height: 13px; padding: 0; margin:0; vertical-align: bottom; position: relative;top: 1px; *overflow: hidden;clear: none; float: left;}
+
+
+.mailperf fieldset fieldset#solutions {width:190px;}
+.mailperf fieldset fieldset#solutions div{width:190px;}
+.mailperf fieldset fieldset#solutions nput[type=checkbox]{top:17px;}
+.mailperf fieldset fieldset#information {width:200px;}
+.mailperf fieldset fieldset#information div {width:200px;}
+.mailperf fieldset fieldset#training {width:200px;margin:10px 10px 0 0;}
+.mailperf fieldset fieldset#training div {width:200px;}
+.mailperf fieldset fieldset#entreprises {width:630px;}
+.mailperf fieldset#disclaimer{width:450px;}
+.mailperf fieldset#disclaimer legend{width:450px;font-size:11px;font-style:italic;color:#8d8685}
+
+.mailperf .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 70px; clear:none;outline:0;}
+html* .mailperf .bouton_envoyer{background:url(../images/bouton_valider.png); width:90px; height:31px; border:none; cursor:pointer; float:left; margin:0 0 0 10px; clear:none}
+*+ html .mailperf fieldset#disclaimer p{width:400px;}
+
+.suggest_wrapper {position: relative; z-index: 24;}
+#suggestBoxElement {position: absolute; top: 30px; left: 80px; z-index:25;visibility: hidden;border: 1px solid #cccccc; visibility:hidden; text-align: left;  white-space: nowrap; background-color: #ffffff; width: 315px;font-style: italic;}
+.suggestions { font-size: 12px;  }
+.suggestionMouseOver { font-size: 12px;background: #cccccc; color: white;  }
+.form-select { width:325px; height:21px; border:none; color:#8d8685; margin:0 0 0 75px; padding:0 0 0 10px;font-size:12px;font-family:Arial;float:left;}
+.mailperf label.error { margin-left: 10px; width: auto; display: inline; color: #D51A18; line-height: 21px; vertical-align: middle; }
+.mailperf label.error { display: none; }	
+.mailperf label.error.offset{margin-left: 186px;}

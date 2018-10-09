@@ -1,0 +1,33 @@
+name = Achat Public
+description = FO Theme
+screenshot = screenshot.png
+engine = phptemplate
+
+stylesheets[all][] = css/global.css
+stylesheets[all][] = css/admin.css
+
+; scripts[] = javascript/jquery-1.3.2.js
+;scripts[] = javascript/jquery.prettyPhoto.js
+;scripts[] = javascript/jquery.blockUI.js
+scripts[] = javascript/jquery.timer.js
+scripts[] = javascript/menu.js
+
+; REGION
+regions[leaderboard] = Leaderboard
+regions[flux_rss_breve] = Flux RSS Breves
+regions[flux_rss_info] = Flux RSS Info
+regions[actualite] = Actualite
+regions[right] = Right
+regions[footer] = Footer
+
+; FEATURES
+features[] = logo
+features[] = name
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+version = "1"
+core = "6.x"
+project = "achatpublic"

@@ -1,0 +1,25 @@
+﻿.titre_actu {font-size:18px; font-weight:bold; margin:18px 0 2px 0}
+.sous_titre_actu {font-size:18px; font-weight:bold; margin:0 0 6px 0}
+.date_actu {font-size:11px; font-weight:normal; color:#999999; margin:0 0 10px 0}
+.contenu {margin:0 25px 0 35px;}
+.contenu_actu {font-size:12px; font-weight:normal; color:#404040}
+	.contenu_actu .object-left{margin:0 20px 20px 0}
+	.contenu_actu  p{margin:0 0 15px 0}
+	.contenu_actu  p.lire_suite_actu{margin:10px 0 0 0}
+	.contenu_actu  p.lire_suite_actu a{text-decoration:none}
+	.contenu_actu  p.lire_suite_actu a:hover{text-decoration:underline}
+	
+.introduction{color:#404040; font-size:14px; font-weight:bold; margin:0 0 30px 0}	
+	.introduction p{margin:0; padding:0}	
+	
+#pagination .prec{float:left; font-weight:bold}
+#pagination .suiv{float:right; font-weight:bold}
+	
+ul.liste_contenu_actu{margin:0 0 5px; display:table-cell;}
+.contenu_actu .object-left.retrait_bas{margin-bottom:50px}
+
+ul.liste_contenu_actu li{list-style-image:url(../images/liste_carre.png);}
+ul.liste_contenu_actu li ul li{list-style-image:url(../images/liste_triangle.png); margin:0 0 10px 15px;}
+ul.liste_contenu_actu li ul li ul li{list-style-image:url(../images/liste_double_fleche.png); margin:0 0 10px 15px;}
+h2{background:url(../images/liste_fleche.png) no-repeat 2px 0px; padding:0 0 0 20px; font-weight:bold; font-size:12px;margin:0 0 15px 0; padding:0}
+h2.fleche{background:url(../images/liste_fleche.png) no-repeat 2px 0px; padding:0 0 0 20px; font-weight:bold; font-size:12px;margin:0 0 15px 0}

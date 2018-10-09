@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * Implementation of hook_menu().
+ */
+function mod_achatpublic_menu() {
+  $admin_access = array('access module achat public');
+  $items = array();
+  
+  $items['admin/settings/export_bdd_achatpublic'] = array(
+    'title' => 'Export BDD',
+    'description' => 'Télécharger la liste complète des différentes inscriptions ',
+    'page callback' => 'mod_achatpublic_load',
+	'access callback' => user_access('access module achat public'),
+	'access arguments' => $admin_access,
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+function mod_achatpublic_load() {
+	// echo(user_access('access module achat public'));
+	$output = "";
+	$result = db_query("SELECT * FROM {reach_all_forms}");
+
+	error_reporting(E_ALL);
+
+	require_once 'PHPExcel/Classes/PHPExcel.php';
+	$objPHPExcel = new PHPExcel();
+	$objPHPExcel->getDefaultStyle()->getFont()->setName('Calibri');
+	$objPHPExcel->getDefaultStyle()->getFont()->setSize(11); 
+	$objPHPExcel->getActiveSheet()->freezePane('A2');
+
+	$objPHPExcel->setActiveSheetIndex(0)
+            ->setCellValue('A1', 'Civilité')
+            ->setCellValue('B1', 'Nom')
+            ->setCellValue('C1', 'Prénom')
+            ->setCellValue('D1', 'Organisme')
+            ->setCellValue('E1', 'Fonction')
+            ->setCellValue('F1', 'Email')
+            ->setCellValue('G1', 'Téléphone')
+            ->setCellValue('H1', 'Adresse 1')
+            ->setCellValue('I1', 'Adresse 2')
+            ->setCellValue('J1', 'Code Postal')
+            ->setCellValue('K1', 'Ville')
+            ->setCellValue('L1', 'Pays')
+            ->setCellValue('M1', 'Fax')
+            ->setCellValue('N1', 'Recevoir la newsletter La dématérialisation facile')
+            ->setCellValue('O1', 'Préparer avec e-Rédac')
+            ->setCellValue('P1', 'Gérer avec la salle des marchés')
+            ->setCellValue('Q1', 'Suivre')
+            ->setCellValue('R1', 'Le journal achatpublic.info')
+            ->setCellValue('S1', 'Espace pro')
+            ->setCellValue('T1', 'Formations pour les acheteurs publics')
+            ->setCellValue('U1', "Veille sur les appels d'offres")
+            ->setCellValue('V1', 'Formations Cycles Experts')
+            ->setCellValue('W1', 'Message')
+            ->setCellValue('X1', 'Date et heure')
+            ->setCellValue('Y1', "Type d'inscription");
+	
+	$indexRow = 2;
+	while (($data = db_fetch_object($result))) {
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(0, $indexRow, $data->civilite);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(1, $indexRow, $data->nom);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(2, $indexRow, $data->prenom);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(3, $indexRow, $data->organisme);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(4, $indexRow, $data->fonction);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(5, $indexRow, $data->email);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(6, $indexRow, $data->telephone);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(7, $indexRow, $data->adresse_1);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(8, $indexRow, $data->adresse_2);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(9, $indexRow, $data->cp);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(10, $indexRow, $data->ville);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(11, $indexRow, $data->pays);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(12, $indexRow, $data->fax);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(13, $indexRow, $data->newsletter_dematerialisation_facile);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(14, $indexRow, $data->solutions_preparer);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(15, $indexRow, $data->solutions_gerer);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(16, $indexRow, $data->solutions_suivre);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(17, $indexRow, $data->sinformer_le_journal);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(18, $indexRow, $data->sinformer_espace_pros);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(19, $indexRow, $data->se_former_formations);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(20, $indexRow, $data->entreprise_veille);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(21, $indexRow, $data->entreprise_formations_cycle);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(22, $indexRow, $data->message);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(23, $indexRow, $data->date_formulaire);
+		$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(24, $indexRow, $data->type);
+		$indexRow++;
+    }
+	
+	$objPHPExcel->getActiveSheet()->setTitle('Export');
+	$objPHPExcel->setActiveSheetIndex(0);
+	
+	$objPHPExcel->getActiveSheet()->getColumnDimension('A')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('C')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('D')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('E')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('F')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('G')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('H')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('I')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('J')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('K')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('L')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('M')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('N')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('O')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('P')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('Q')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('R')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('S')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('T')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('U')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('V')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('W')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('X')->setAutoSize(true);$objPHPExcel->getActiveSheet()->getColumnDimension('Y')->setAutoSize(true);
+	
+	$filename = "export_inscription_" . date('d-m-Y_H-i') . ".xlsx";
+	header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+	header('Content-Disposition: attachment;filename="'.$filename.'"');
+	header('Cache-Control: max-age=0');
+
+	$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+	$objWriter->save('php://output');
+	exit;
+}

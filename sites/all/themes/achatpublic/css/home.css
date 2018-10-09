@@ -1,0 +1,64 @@
+#leaderboard{margin:0 0 20px 0; padding: 0; background: none; width: 998px; height:338px;overflow:hidden;float:left;}
+#leaderboard ul{list-style-type:none;margin:0;padding:0;width:998px; }
+#leaderboard ul li{list-style-type:none;margin:0;padding:0; background-color:#141415;width:998px;}
+#leaderboard ul li div {text-align:center;}
+	#leaderboard_nav  {color:#000000;margin:295px 0 0;position:absolute;right:13px;top:120px;z-index:99;}
+	#leaderboard_nav_prev  {background:url(../images/leaderboard_prev.png) no-repeat scroll right top transparent;display:inline;float:left;height:27px;width:19px;}
+	#leaderboard_nav_selec  {display:inline; float:left; margin:0 0 0 -1px;}
+		#leaderboard_nav_selec a {background:url(../images/leaderboard_a.png) no-repeat scroll right top transparent;color:#858e9a;float:left;font-size:11px;height:20px;padding:7px 5px 0 5px;text-decoration:none;width:7px;text-align:center}
+		#leaderboard_nav_selec span.separation_a {background:transparent url(../images/leaderboard_a_separation.png); width:2px; height:27px;margin:0;padding:0}
+		#leaderboard_nav_selec a:hover, #leaderboard_nav_selec a.activeSlide {background:transparent url(../images/leaderboard_a_hover.png) no-repeat; color:white; height:20px; padding:7px 5px 0 5px;}
+	#leaderboard_nav_next  {background:url(../images/leaderboard_next.png) no-repeat scroll left top transparent;border-right:0 solid #FFFFFF;display:inline;float:left;height:27px;width:19px;}
+
+#bloc_achat_public_info {width:452px; height:200px; float: left; margin:0 10px 0 0; padding:10px 0 0 25px; background: url(../images/bloc_achat_public_info.png) repeat-x top center; }
+	#bloc_achat_public_info span.titre_breves {font-size:14px;font-family:Arial;color:#68ae04;font-weight:bold;}
+	#bloc_achat_public_info div.breves {margin:6px 0 0 0}
+		#bloc_achat_public_info div.breves  p{line-height:15px;margin:0;padding:0;text-align:left}
+		#bloc_achat_public_info div.breves p.liresuite{margin:8px 0 0 0;}
+			#bloc_achat_public_info div.breves  p.liresuite{margin:5px 0 0 0;}
+	#bloc_achat_public_info span.date {font-size:11px;font-family:Arial;color:#68ae04;margin:0 10px 0 0;font-weight:bold;}
+	#bloc_achat_public_info #block-aggregator-feed-3 span.date {/*color:#25a872;*/color:#68ae04;}
+	#bloc_achat_public_info_top{width:430px; float: left; margin:0; padding:0;}
+		#bloc_achat_public_info_top img{ float: left; margin:7px 0 0 0; padding:0;}
+		#bloc_achat_public_info_top span.ajd_sur {font-size:19px;font-family:Arial;color:#1a171b;margin:10px 10px 8px 0;padding:0;float:left}
+	#bloc_achat_public_info_left{width:205px; margin:0 10px 0 0; padding:0 10px 0 0;float:left;background:url(../images/pointilles_vertical.png) no-repeat right bottom; }
+	#bloc_achat_public_info_left ul{padding:0;}
+	#bloc_achat_public_info_left li a{text-decoration:none;color:#666666}
+	#bloc_achat_public_info_left li a:hover{text-decoration:underline;}
+	#bloc_achat_public_info_left #block-aggregator-feed-1, #bloc_achat_public_info_right #block-aggregator-feed-2{float:left;margin:5px 0 0 0;}
+	#bloc_achat_public_info_left #block-aggregator-feed-1 ul, #bloc_achat_public_info_right #block-aggregator-feed-2 ul{margin:0;padding:0;list-style-type:none;}
+#bloc_achat_public_info_left #block-aggregator-feed-1 ul li, #bloc_achat_public_info_right #block-aggregator-feed-2 ul li{list-style-type:none; margin: 0 0 3px 0;font-size:11px;}
+	#bloc_achat_public_info_right #block-aggregator-feed-2 ul li p.lirelasuite {/*float:left;*/ margin:4px 0 0 0;}
+	#bloc_achat_public_info_right #block-aggregator-feed-2 ul li a {/*float:left;*/color:#666666;cursor:pointer;font-family:Arial,sans-serif;font-size:11px;text-decoration:none;}
+	#bloc_achat_public_info_left #block-aggregator-feed-1 ul li a span, #bloc_achat_public_info_right #block-aggregator-feed-2 ul li a span{/*float:left;*/color:#403E40;font-weight:bold;}
+	#bloc_achat_public_info_left #block-aggregator-feed-1 ul li a:hover span, #bloc_achat_public_info_right #block-aggregator-feed-2 ul li a:hover span{/*float:left;*/ text-decoration:underline;}
+	#bloc_achat_public_info_left #block-aggregator-feed-1 ul li a:hover {text-decoration:none;}
+	#bloc_achat_public_info_right #block-aggregator-feed-2 ul li a:hover {text-decoration: underline;}
+	#bloc_achat_public_info_right{width:210px; margin:0; padding:0; float:left}
+	
+#bloc_salle_des_marches {width:250px; height:210px; float: left; margin:0; padding:0;background: url(../images/bloc_actualites.png) repeat-x top center;}
+#bloc_salle_des_marches span.deuxpoints {font-size:16px; font-weight:bold; margin:0 0 0 -3px;}
+	#bloc_salle_des_marches_acheteur {width:235px; float: left; padding:10px 0 10px 15px;}
+		#bloc_salle_des_marches_acheteur_top {height:15px;margin:0;padding:0;color:#0892AF;font-size:14px;}
+			#bloc_salle_des_marches_acheteur_top p{line-height:15px;margin:0;padding:0;text-align:left}		
+			#bloc_salle_des_marches_acheteur_top  span.intitule{color:#026DAC;font-family:arial;font-size:23px;font-weight:normal;letter-spacing:2px;margin:0 10px 0 4px}
+		#bloc_salle_des_marches_acheteur_bottom{font-size:12px;font-family:	Arial,Helvetica, sans-serif;background-color:#0892AF;color:#FFFFFF;border-radius:6px;padding-top:9px;text-transform:uppercase;width:221px;height:25px;text-align:center;margin-top:5px;}
+			#bloc_salle_des_marches_acheteur_bottom a{text-decoration:none; color:#FFFFFF;}
+
+#bloc_salle_des_marches_entreprise {width:235px; height:68px; float: left; margin:0 0 10px 0; padding:5px 0 20px 15px; border-top: 2px solid #d5e1e5;}
+	#bloc_salle_des_marches_entreprise_top {height:15px;margin:0;padding:0;color:#06adae;font-size:14px;}
+			#bloc_salle_des_marches_entreprise_top p{line-height:8px;margin:0;padding:0;text-align:left}		
+			#bloc_salle_des_marches_entreprise_top  span.intitule{color:#06ADAE;font-family:Arial,sans-serif;font-size:23px;font-weight:normal;margin:0 10px 0 4px;letter-spacing:2px;}
+	#bloc_salle_des_marches_entreprise_g{display:inline-table;margin-top:5px;}
+	#bloc_salle_des_marches_entreprise_bottom{font-size:12px;font-family:Arial,Helvetica, sans-serif;background-color:#06adae;color:#FFFFFF;border-radius:6px;padding-top:9px;text-transform:uppercase;width:155px;height:20px;text-align:center;display:table-cell;}
+		#bloc_salle_des_marches_entreprise_bottom a{color:#FFFFFF;text-decoration:none;}
+	#bloc_salle_des_marches_entreprise_bottom2{font-size:12px;font-family:Arial,Helvetica, sans-serif;background-color:#06adae;color:#FFFFFF;border-radius:6px;padding-top:9px;text-transform:uppercase;width:62px;height:20px;text-align:center;display:table-cell;}
+		#bloc_salle_des_marches_entreprise_bottom2 a{color:#FFFFFF;text-decoration:none;}
+
+	#bloc_salle_des_marches_entreprise_premium{font-size:12px;font-family:	Arial,Helvetica, sans-serif;background-color:#06adae;color:#FFFFFF;border-radius:6px;padding-top:9px;text-transform:uppercase;width:221px;height:20px;text-align:center;}
+		#bloc_salle_des_marches_entreprise_premium a{color:#FFFFFF;text-decoration:none;}
+			
+#bloc_actualites .actualites .view-content ul li div a span.titre_bloc_actualite_accueil{color:#403e40; font-family:Arial,sans-serif; font-weight:bold; font-size:11px;cursor:pointer}	
+#bloc_actualites .actualites .view-content ul li div a span.titre_bloc_actualite_accueil:hover{text-decoration:underline}	
+#bloc_actualites .actualites .view-content ul li div a.contenu_bloc_actualite_accueil p{color:#949294; font-family:Arial,sans-serif; font-weight:normal; font-size:11px}	
+#bloc_actualites .actualites .view-content ul li div a.contenu_bloc_actualite_accueil p:hover{text-decoration:underline}	

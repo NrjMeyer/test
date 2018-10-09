@@ -1,0 +1,4 @@
+name = Export BDD
+description = Permet de télécharger la liste complète des différentes inscriptions sur le site
+core = 6.x
+
