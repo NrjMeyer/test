@@ -94,7 +94,7 @@ DirectoryIndex tmp/install_redirect.php index.php
   #
   # If your site is running in a VirtualDocumentRoot at http://example.com/,
   # uncomment the following line:
-  RewriteBase /
+  RewriteBase /projets/achatpublic/srcs/
 
   # Rewrite old-style URLs of the form 'node.php?id=x'.
   #RewriteCond %{REQUEST_FILENAME} !-f
